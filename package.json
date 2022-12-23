@@ -9,7 +9,7 @@
   "scripts": {
     "start:dev": "nodemon server.js",
     "start:prod": "SET NODE_ENV=production&&nodemon server.js",
-    "build": "parcel watch --no-hmr public/js/index.js",
+    "build": "parcel build public/js/index.js",
     "debug": "ndb server.js"
   },
   "author": "Aaron de Boer",
@@ -19,6 +19,7 @@
     "@swc/helpers": "^0.4.14",
     "axios": "^1.2.1",
     "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",

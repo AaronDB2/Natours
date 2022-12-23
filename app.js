@@ -8,6 +8,7 @@ const mongoSanitize = require('express-mongo-sanitize');
 const xss = require('xss-clean');
 const hpp = require('hpp');
 const cookieParser = require('cookie-parser');
+const compression = require('compression');
 
 // Own Modules
 const viewRouter = require('./routes/viewRoutes');
@@ -116,6 +117,9 @@ app.use(
 
 // Middleware for Handling CORS
 app.use(cors());
+
+// Middleware for Compressing Requests
+app.use(compression());
 
 // Midlleware for Adding Current Date to HTTP Request
 app.use((req, res, next) => {
