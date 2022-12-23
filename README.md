@@ -1,15 +1,4 @@
-# 🚀 Welcome to your new awesome project!
+Natours is a REST API and server side rendered web application that users can use to book different tours trough nature.
 
-This project has been created using **webpack-cli**, you can now run
 
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
+Run npm init to donwload all the required packages from npm
