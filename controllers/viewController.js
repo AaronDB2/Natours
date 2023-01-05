@@ -40,6 +40,12 @@ exports.renderLogin = catchAsync(async (req, res, next) => {
   });
 });
 
+exports.renderSignup = catchAsync(async (req, res, next) => {
+  res.status(200).render('signup', {
+    title: 'signup',
+  });
+});
+
 // Renders account.pug
 exports.renderAccount = catchAsync(async (req, res, next) => {
   res.status(200).render('account', {

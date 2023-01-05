@@ -18,6 +18,7 @@ router.get(
   viewController.renderTourDetails
 );
 router.get('/login', authController.isLoggedIn, viewController.renderLogin);
+router.get('/signup', viewController.renderSignup);
 router.get('/me', authController.protect, viewController.renderAccount);
 router.get('/my-tours', authController.protect, viewController.renderMyTours);
 router.post(
